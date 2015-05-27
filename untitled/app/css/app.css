@@ -1,0 +1,76 @@
+/* app css stylesheet */
+
+/*
+Our custom CSS to control the look and feel of the site.
+Select DOM elements based on their name,
+class (.), or ID (#) and define their styles here.
+*/
+body {
+  font-size: 1.5em;
+  color: #444;
+}
+
+.search {
+  border-bottom: 1px solid black;
+}
+
+.top_nav{
+  font-family: Arvo;
+  color: #333333;
+  display: block;
+  margin-right: 12px;
+  float: left;
+}
+
+#title {
+  font-family: Arvo;
+  color: #333333
+font-size: 48px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  border-top: 2px solid black;
+
+}
+
+#date {
+  font-family: Arvo;
+  font-size: 19px;
+  color: #333333
+display: block;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-top: -5px;
+
+}
+
+.navig li {
+  display: inline;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-decoration: none;
+  color:black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  float: left;
+  margin: 3px 3px 0px 3px;
+  padding: 5px 5px 0px 5px;
+  color: #000000;
+}
+#mainView {
+  clear: both;
+  padding: 0 1em;
+}
+.active {
+  background-color: #FFF;
+  color: #000;
+  font-weight: bold;
+}
