@@ -1,14 +1,12 @@
-app.directive('displayNav', function(){
+app.directive('displayNav', ['$location', function($location){
   return {
     restrict: 'E',
     scope: {},
     templateUrl: 'js/directives/displayNav.html',
     link: function(scope, element, attrs) { 
-      scope.currId = 0;
-
       scope.onClick = function(clickedId) { 
-        scope.currId = clickedId;
+        $location.path("/content/" + clickedId );
       } 
     }
   };
-});
+}]);

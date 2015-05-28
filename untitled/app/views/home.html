@@ -11,7 +11,11 @@
             <!--<li>{{displayName}}</li>-->
         <!--</ul>-->
     <!--</div>-->
+    
         <div class="home" ng-controller="HomeController">
+        <div ng-controller="BannerController">
+            <display-banner></display-banner>
+        </div>
             <div class="aside" ng-repeat="aside in content.aside">
                 <h2 class="aside headlines">{{aside.headLine}}</h2>
                 <h3 class="aside snippet">{{aside.snippet}}</h3>

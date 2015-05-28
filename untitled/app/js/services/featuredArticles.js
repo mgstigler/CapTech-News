@@ -7,6 +7,6 @@ app.factory('content', ['$http', function($http) {
             return data;
         })
         .error(function(data) {
-            return data;
+            console.log('error');
         });
 }]);
