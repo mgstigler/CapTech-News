@@ -38,12 +38,19 @@
     <div class="top_nav"><i class="fa fa-bars"></i> <span style="color:#cccccc">SECTIONS </span></div>
     <div class="top_nav"><i class="fa fa-search"></i> <span style="color:#cccccc"> SEARCH </span></div>
     <div class="container">
-        <h1 id="title">Captech.Io.News</h1>
+        <h1 id="title">CAPTECH.IO.NEWS</h1>
 
         <div ng-controller="CategoryController">
             <ul>
                 <li ng-repeat="category in categories">
                     {{category.displayName}}
+                </li>
+            </ul>
+        </div>
+        <div ng-controller="BannerController">
+            <ul>
+                <li ng-repeat="b in banner">
+                    {{b.message}}
                 </li>
             </ul>
         </div>
@@ -75,6 +82,7 @@
     <!-- Services -->
     <script src="js/services/featuredArticles.js"></script>
     <script src="js/services/categories.js"></script>
+    <script src="js/services/banner.js"></script>
 
 
 </body>

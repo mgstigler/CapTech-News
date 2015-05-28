@@ -20,17 +20,20 @@
                 <h2 class="main headlines">{{main.headLine}}</h2>
                 <h3 class="main snippet">{{main.snippet}}</h3>
             </div>
-            <div class="opinion" ng-repeat="opinion in content.opinion">
+            <div class="opinion">
                 <h2 class="opinion title">The Opinion Pages</h2>
-                <h2 class="opinion headlines">{{opinion.headLine}}</h2>
-                <h3 class="opinion snippet">{{opinion.snippet}}</h3>
+                <div class="opinionContent" ng-repeat="opinion in content.opinion">
+                    <h2 class="opinion headlines">{{opinion.headLine}}</h2>
+                    <h3 class="opinion snippet">{{opinion.snippet}}</h3>
+                </div>
             </div>
-            <div class="travel" ng-repeat="travel in content.travel">
+            <div class="travel">
                 <h2 class="travel title">TRAVEL</h2>
-                <h2 class="travel headlines">{{travel.headLine}}</h2>
-                <h3 class="travel snippet">{{travel.snippet}}</h3>
+                <div class="travelContent" ng-repeat="travel in content.travel">
+                    <h2 class="travel headlines">{{travel.headLine}}</h2>
+                    <h3 class="travel snippet">{{travel.snippet}}</h3>
+                </div>
             </div>
-
 
     </div>
 </div>

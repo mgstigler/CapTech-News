@@ -21,3 +21,18 @@ app.controller('CategoryController', ['$scope', 'CategoriesService', '$routePara
     //
     //});
 }]);
+
+app.controller('BannerController', ['$scope', 'BannerService', '$routeParams', function($scope, BannerService, $routeParams) {
+
+    $scope.displayName = "hello";
+
+    BannerService.success(function(data) {
+        $scope.banner = data;
+    });
+
+    //$scope.category = data[$routeParams.id];
+    //content.success(function(data) {
+    //
+    //});
+}]);
+
