@@ -1,17 +1,36 @@
 <!-- This page will contain the json objects from the featured articles https-->
 
-<div class="main">
-    <div class="container">
-        <div class="top_nav"> <i class="fa fa-bars"></i> <span style="color:#cccccc">SECTIONS </span> </div>
-        <div class= "top_nav"> <i class="fa fa-search"></i> <span style="color:#cccccc"> SEARCH </span> </div>
-        <h1 id="title">Captech.Io.News</h1>
-        <h2>Recent Posts</h2>
-            <div class="featured" ng-repeat="content in contents">
-                <a href="#/content/{{$index}}">
-                    <p class="headLine">{{content.headLine}}</p>
-                </a>
 
+<title>CapTech News</title>
+<div ng-app="NewsApp">
+    <div class="top_nav"> <i class="fa fa-bars"></i> <span style="color:#cccccc">SECTIONS </span> </div>
+    <div class= "top_nav"> <i class="fa fa-search"></i> <span style="color:#cccccc"> SEARCH </span> </div>
+    <div class="container">
+        <h1 id="title">Captech.Io.News</h1>
+        <ul class="menu" ng-controller="CategoryController" ng-repeat="displayName in category">
+            <li>{{displayName}}</li>
+        </ul>
+    </div>
+        <div class="home" ng-controller="HomeController">
+            <div class="aside" ng-repeat="aside in content.aside">
+                <h2 class="aside headlines">{{aside.headLine}}</h2>
+                <h3 class="aside snippet">{{aside.snippet}}</h3>
             </div>
+            <div class="main" ng-repeat="main in content.main">
+                <h2 class="main headlines">{{main.headLine}}</h2>
+                <h3 class="main snippet">{{main.snippet}}</h3>
+            </div>
+            <div class="opinion" ng-repeat="opinion in content.opinion">
+                <h2 class="opinion title">The Opinion Pages</h2>
+                <h2 class="opinion headlines">{{opinion.headLine}}</h2>
+                <h3 class="opinion snippet">{{opinion.snippet}}</h3>
+            </div>
+            <div class="travel" ng-repeat="travel in content.travel">
+                <h2 class="travel title">TRAVEL</h2>
+                <h2 class="travel headlines">{{travel.headLine}}</h2>
+                <h3 class="travel snippet">{{travel.snippet}}</h3>
+            </div>
+
 
     </div>
 </div>

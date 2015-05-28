@@ -7,13 +7,13 @@ app.config(function($routeProvider) {
     controller: 'HomeController',
     templateUrl: 'views/home.html'
   })
-      .when('/content/:id', {
-        controller: 'ContentController',
-        templateUrl: 'views/content.html'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+  .when('/content/:id', {
+    controller: 'ContentController',
+    templateUrl: 'views/content.html'
+  })
+  .otherwise({
+    redirectTo: '/'
+  });
 
 });
 

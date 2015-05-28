@@ -6,3 +6,4 @@ app.controller('ContentController', ['$scope', 'content', '$routeParams', functi
         $scope.detail = data[$routeParams.id];
     });
 }]);
+
