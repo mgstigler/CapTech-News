@@ -48,11 +48,7 @@
             </ul>
         </div>
         <div ng-controller="BannerController">
-            <ul>
-                <li ng-repeat="b in banner">
-                    {{b.message}}
-                </li>
-            </ul>
+            <display-banner></display-banner>
         </div>
     </div>
     <div ng-view></div>
@@ -83,6 +79,9 @@
     <script src="js/services/featuredArticles.js"></script>
     <script src="js/services/categories.js"></script>
     <script src="js/services/banner.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/displayBanner.js"></script>
 
 
 </body>

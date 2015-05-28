@@ -27,7 +27,7 @@ app.controller('BannerController', ['$scope', 'BannerService', '$routeParams', f
     $scope.displayName = "hello";
 
     BannerService.success(function(data) {
-        $scope.banner = data;
+        $scope.banners = data;
     });
 
     //$scope.category = data[$routeParams.id];
