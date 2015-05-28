@@ -8,8 +8,16 @@ app.controller('HomeController', ['$scope', 'content', function($scope, content)
     });
 }]);
 
-app.controller('CategoryController', ['$scope', 'category', '$routeParams', function($scope, category, $routeParams) {
-    content.success(function(data) {
-        $scope.category = data[$routeParams.id];
+app.controller('CategoryController', ['$scope', 'CategoriesService', '$routeParams', function($scope, CategoriesService, $routeParams) {
+
+    $scope.displayName = "hello";
+
+    CategoriesService.success(function(data) {
+        $scope.categories = data;
     });
+
+    //$scope.category = data[$routeParams.id];
+    //content.success(function(data) {
+    //
+    //});
 }]);

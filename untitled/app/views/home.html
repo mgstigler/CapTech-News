@@ -1,16 +1,16 @@
 <!-- This page will contain the json objects from the featured articles https-->
 
 
-<title>CapTech News</title>
-<div ng-app="NewsApp">
-    <div class="top_nav"> <i class="fa fa-bars"></i> <span style="color:#cccccc">SECTIONS </span> </div>
-    <div class= "top_nav"> <i class="fa fa-search"></i> <span style="color:#cccccc"> SEARCH </span> </div>
-    <div class="container">
-        <h1 id="title">Captech.Io.News</h1>
-        <ul class="menu" ng-controller="CategoryController" ng-repeat="displayName in category">
-            <li>{{displayName}}</li>
-        </ul>
-    </div>
+<!--<title>CapTech News</title>-->
+<!--<div ng-app="NewsApp">-->
+    <!--<div class="top_nav"> <i class="fa fa-bars"></i> <span style="color:#cccccc">SECTIONS </span> </div>-->
+    <!--<div class= "top_nav"> <i class="fa fa-search"></i> <span style="color:#cccccc"> SEARCH </span> </div>-->
+    <!--<div class="container">-->
+        <!--<h1 id="title">Captech.Io.News</h1>-->
+        <!--<ul class="menu" ng-controller="CategoryController" ng-repeat="displayName in category">-->
+            <!--<li>{{displayName}}</li>-->
+        <!--</ul>-->
+    <!--</div>-->
         <div class="home" ng-controller="HomeController">
             <div class="aside" ng-repeat="aside in content.aside">
                 <h2 class="aside headlines">{{aside.headLine}}</h2>
