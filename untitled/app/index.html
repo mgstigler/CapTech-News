@@ -41,11 +41,7 @@
         <h1 id="title">CAPTECH.IO.NEWS</h1>
 
         <div ng-controller="CategoryController">
-            <ul>
-                <li ng-repeat="category in categories">
-                    {{category.displayName}}
-                </li>
-            </ul>
+            <display-nav></display-nav>
         </div>
         <div ng-controller="BannerController">
             <display-banner></display-banner>
@@ -82,6 +78,7 @@
 
     <!-- Directives -->
     <script src="js/directives/displayBanner.js"></script>
+    <script src="js/directives/displayNav.js"></script>
 
 
 </body>
