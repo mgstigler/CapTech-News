@@ -10,8 +10,6 @@ app.controller('HomeController', ['$scope', 'content', function($scope, content)
 
 app.controller('CategoryController', ['$scope', 'CategoriesService', '$routeParams', function($scope, CategoriesService, $routeParams) {
 
-    $scope.displayName = "hello";
-
     CategoriesService.success(function(data) {
         $scope.categories = data;
     });

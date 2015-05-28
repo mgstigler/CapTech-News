@@ -1,0 +1,13 @@
+<ul>
+	<button class="btn btn-active" ng-click="onClick()"> 
+		{{ buttonText }} 
+	</button>
+	<div class="btn btn-active" ng-controller="BannerController">
+		<li  ng-hide="clicked">
+		        {{banners[0].message}}
+	    	</li>
+		<li  ng-hide="!clicked" ng-repeat="b in banners">
+		        {{b.message}}
+	    	</li>
+	</div>
+</ul>

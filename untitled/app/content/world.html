@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="NewsApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="NewsApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="NewsApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="NewsApp" class="no-js"> <!--<![endif]-->
+
+
+<!--head section with meta, bower componenets, and app.css-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CapTech News</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+</head>
+
+
+<body ng-app="NewsApp">
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<title>CapTech News</title>
+
+<div ng-app="NewsApp">
+    <div class="top_nav"><i class="fa fa-bars"></i> <span style="color:#cccccc">SECTIONS </span></div>
+    <div class="top_nav"><i class="fa fa-search"></i> <span style="color:#cccccc"> SEARCH </span></div>
+    <div class="container">
+        <h1 id="title">CAPTECH.IO.NEWS</h1>
+
+        <div ng-controller="CategoryController">
+            <display-nav></display-nav>
+        </div>
+        <div ng-controller="BannerController">
+            <display-banner></display-banner>
+        </div>
+    </div>
+    <div ng-view></div>
+
+
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+    <script src="views/content.html"></script>
+    <script src="views/home.html"></script>
+    <script src="views/index-async.html"></script>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/homeController.js"></script>
+    <script src="js/controllers/contentController.js"></script>
+
+
+    <!-- Services -->
+    <script src="js/services/featuredArticles.js"></script>
+    <script src="js/services/categories.js"></script>
+    <script src="js/services/banner.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/displayBanner.js"></script>
+    <script src="js/directives/displayNav.js"></script>
+
+
+</body>
+</html>
