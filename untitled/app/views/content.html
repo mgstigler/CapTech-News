@@ -1,15 +1,15 @@
 <script type="text/javascript">$route.reload();</script>
 <div class="home" ng-controller="ContentController">
-{{ content }}
-	<div class="main" ng-repeat="main in content.main">
-	        <h2 class="main headlines">{{main.headLine}}</h2>
-	        <!-- <h3 class="main snippet">{{main.snippet}}</h3>
-	        <h4 class="main fullStory">{{main.fullStory}}</h4> -->
+<!-- no ng-repeat cause i think there is just one of each - J -->
+	<div class="main">
+	        <h2 class="main headlines">{{content.main.headLine}}</h2>
+	        <h3 class="main snippet">{{content.main.snippet}}</h3>
+	        <h4 class="main fullStory">{{content.main.fullStory}}</h4>
 	    </div>
-	    <div class="aside" ng-repeat="aside in content.aside">
-	        <h2 class="aside headlines">{{aside.headLine}}</h2>
-	        <!-- <h3 class="aside location">{{aside.location}}</h3>
-	        <h4 class="aside fullStory">{{aside.fullStory}}</h4> -->
+	    <div class="aside">
+	        <h2 class="aside headlines">{{content.aside.headLine}}</h2>
+	        <h3 class="aside location">{{content.aside.location}}</h3>
+	        <h4 class="aside fullStory">{{content.aside.fullStory}}</h4>
 	    </div>
 	</div>
 </div>
